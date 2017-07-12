@@ -10,7 +10,7 @@ import springbook.user.domain.User;
 
 public class UserDao {
 	/**
-	 *  ÃÊ³­°¨ DAO - 56p
+	 * ìœ ì €DAO - 56p
 	 */
 	public void add(User user) throws ClassNotFoundException, SQLException{
 		Class.forName("com.mysql.jdbc.Driver");
