@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import springbook.user.domain.User;
 
 public class UserDao {
+<<<<<<< HEAD
 
 	ConnectionMaker connectionMaker;
 	
@@ -16,6 +17,11 @@ public class UserDao {
 		this.connectionMaker = connectionMaker;
 	}
 	
+=======
+	/**
+	 * 유저DAO - 56p
+	 */
+>>>>>>> refs/remotes/origin/master
 	public void add(User user) throws ClassNotFoundException, SQLException{
 		Connection c = connectionMaker.makeNewConnection();
 		
