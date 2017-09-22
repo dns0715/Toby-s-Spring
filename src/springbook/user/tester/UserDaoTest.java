@@ -2,8 +2,6 @@ package springbook.user.tester;
 
 import java.sql.SQLException;
 
-import springbook.user.dao.ConnectionMaker;
-import springbook.user.dao.DConnectionMaker;
 import springbook.user.dao.DaoFactory;
 import springbook.user.dao.UserDao;
 import springbook.user.domain.User;
@@ -15,18 +13,18 @@ public class UserDaoTest {
 		
 		User user = new User();
 		user.setId("whiteship");
-		user.setName("¹é±â¼±");
+		user.setName("ë°±ê¸°ì„ ");
 		user.setPassword("married");
 		
 		dao.add(user);
 		
-		System.out.println(user.getId() + " µî·Ï ¼º°ø");
+		System.out.println(user.getId() + " ë“±ë¡ ì™„ë£Œ");
 		
 		User user2 = dao.get(user.getId());
 		System.out.println(user2.getName());
 		System.out.println(user2.getPassword());
 		
-		System.out.println(user2.getId() + " Á¶È¸ ¼º°ø");
+		System.out.println(user2.getId() + " ì¡°íšŒ ì„±ê³µ");
 		
 	}
 
